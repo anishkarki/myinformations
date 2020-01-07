@@ -1,0 +1,55 @@
+'''
+Bias is the intercept added in a linear equation.
+adjust the output along with the weighted sum of the inputes to the neuron.
+Move activation functio to either left or right
+
+output = sum(w*x) + bias
+
+Stepness of the sigmoid depends on the weight of the inputs.
+
+y=mx+c
+
+If not c then line will only pass through origin.
+
+Used to delay the trigerring of the activation function.
+
+Squashing the linear net input through a non-linear function.
+
+Why Non-linearity:
+
+Degree more than one and they have a curvature when we plot a Non-Linear function.
+
+
+Universal function approximators. ???
+
+Features:
+Should be differentiable. We need it to be this way so as to perform backpropagation optimization stratefy while propagating backward in the network to compute
+gradients of Error(loss) with respect to Weights and then accordingly optimize weights using Gradient
+descend or any other Optimization techique to reduce Error.
+
+Sigmoid: f(x) = 1/1+exp(-x)
+range: 0 to 1
+S- shaped curve.
+Bad points:
+Vanishing gradient problem ???
+Output not zero centered.
+Makes optimization harder.
+Sigmoids saturate and kill gradients.
+Slow convergence.
+
+Hyperbolic Tangent function-Tanh: f(x) = 1-exp(-2x) / 1+exp(-2x)
+
+Vanishing gradient problem.
+
+RELU= Rectified Linear units.
+r(x)  = max(0,x)
+
+Used onlt within hidden layers of a neural network model.
+Can result Dead neurons.
+
+Leaky ReLu.
+
+Maxoutfunction.
+'''
+
+
